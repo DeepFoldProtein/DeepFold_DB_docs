@@ -4,4 +4,4 @@ DeepFold DB main rep [delibae/DeepFold_DB](https://github.com/delibae/DeepFold_D
 
 ## Libary
 
-* [gcputils](./gcputils/gcputils.md): Big Query와 Cloud Storage utils
+* [gcputils v0.1.1](./gcputils/gcputils.md): Big Query와 Cloud Storage utils

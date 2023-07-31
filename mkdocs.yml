@@ -5,7 +5,10 @@ nav:
   - Home: index.md
   - gcputils: 
     - Subpackages: gcputils/gcputils.md
-    - bigquery:
-      - BigQueryManager: gcputils/bigquery/BigQueryManager.md
     - test:
       - connection_test: gcputils/test/connection_test.md
+    - bigquery:
+      - BigQueryManager: gcputils/bigquery/BigQueryManager.md
+    - cloudstorage:
+      - CloudStorageManager: gcputils/cloudstorage/CloudStorageManager.md
+
