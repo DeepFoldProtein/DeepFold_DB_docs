@@ -433,8 +433,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download_bucketself-max_workers-int-destination_dir-str-none" class="md-nav__link">
-    download_bucket(self, max_workers: int, destination_dir: str) -&gt; None
+  <a href="#download_bucket" class="md-nav__link">
+    download_bucket
   </a>
   
 </li>
@@ -529,8 +529,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download_bucketself-max_workers-int-destination_dir-str-none" class="md-nav__link">
-    download_bucket(self, max_workers: int, destination_dir: str) -&gt; None
+  <a href="#download_bucket" class="md-nav__link">
+    download_bucket
   </a>
   
 </li>
@@ -562,26 +562,26 @@
 <li><code>bucket_name (str)</code>: The Google Cloud Storage bucket name.</li>
 </ul>
 <h2 id="methods">Methods</h2>
-<h4 id="__init__"><code>__init__</code></h4>
+<h3 id="__init__"><code>__init__</code></h3>
 <p>Initializes a new instance of the <code>CloudStorageManager</code> class.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>bucket_name (str)</code>: The Google Cloud Storage bucket name.</li>
 </ul>
-<h4 id="list_blobs"><code>list_blobs</code></h4>
+<h3 id="list_blobs"><code>list_blobs</code></h3>
 <p>Lists all the blobs in the bucket.</p>
 <p><strong>Returns:</strong></p>
 <ul>
 <li><code>List[str]</code>: A list of blob names in the bucket.</li>
 </ul>
-<h4 id="download_blob"><code>download_blob</code></h4>
+<h3 id="download_blob"><code>download_blob</code></h3>
 <p>Downloads a blob from the bucket.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>blob_name (str)</code>: The name of the blob to download.</li>
 <li><code>destination_dir (str)</code>: The directory where the downloaded blob will be stored.</li>
 </ul>
-<h4 id="download_bucketself-max_workers-int-destination_dir-str-none"><code>download_bucket(self, max_workers: int, destination_dir: str) -&gt; None</code></h4>
+<h3 id="download_bucket"><code>download_bucket</code></h3>
 <p>Downloads all blobs from the bucket.</p>
 <p><strong>Parameters:</strong></p>
 <ul>

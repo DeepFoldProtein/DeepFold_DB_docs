@@ -394,8 +394,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tobucketself-storage_dir-str-file_name-str-dataset_id-str-table_name-str-compression-bool" class="md-nav__link">
-    tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)
+  <a href="#tobucket" class="md-nav__link">
+    tobucket
   </a>
   
 </li>
@@ -559,8 +559,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tobucketself-storage_dir-str-file_name-str-dataset_id-str-table_name-str-compression-bool" class="md-nav__link">
-    tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)
+  <a href="#tobucket" class="md-nav__link">
+    tobucket
   </a>
   
 </li>
@@ -609,14 +609,14 @@
 <li><code>dry_run (bool)</code>: If True, only the cost of queries will be estimated without actual execution.</li>
 </ul>
 <h2 id="methods">Methods</h2>
-<h4 id="__init__"><code>__init__</code></h4>
+<h3 id="__init__"><code>__init__</code></h3>
 <p>Initializes a new instance of the BigQueryManager class.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>project_id (str)</code>: The Google Cloud project ID.</li>
 <li><code>dry_run (bool, optional)</code>: If True, it only estimates the cost of queries without actually executing them. Defaults to False.</li>
 </ul>
-<h4 id="howmuch"><code>howmuch</code></h4>
+<h3 id="howmuch"><code>howmuch</code></h3>
 <p>Estimates the cost and the amount of data that a query will process.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -627,7 +627,7 @@
 <ul>
 <li>None</li>
 </ul>
-<h4 id="execute_query"><code>execute_query</code></h4>
+<h3 id="execute_query"><code>execute_query</code></h3>
 <p>Executes a SQL query and returns the results as a pandas DataFrame.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -637,7 +637,7 @@
 <ul>
 <li><code>Optional[DataFrame]</code>: The result of the query as a pandas DataFrame or None if dry_run is True.</li>
 </ul>
-<h4 id="tobucketself-storage_dir-str-file_name-str-dataset_id-str-table_name-str-compression-bool"><code>tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)</code></h4>
+<h3 id="tobucket"><code>tobucket</code></h3>
 <p>Extracts a BigQuery table to a Google Cloud Storage bucket.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -651,7 +651,7 @@
 <ul>
 <li>None</li>
 </ul>
-<h4 id="writetable"><code>writetable</code></h4>
+<h3 id="writetable"><code>writetable</code></h3>
 <p>Executes a BigQuery SQL query and writes the results to a destination table in a dataset.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
