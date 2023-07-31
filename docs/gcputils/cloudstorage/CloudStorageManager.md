@@ -1,4 +1,4 @@
-# CloudStorageManager
+# gcputils.cloudstorage.CloudStorageManager
 
 The `CloudStorageManager` class provides an interface to interact with Google Cloud Storage service. It requires the Google Cloud Storage bucket name during initialization.
 
