@@ -58,6 +58,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gcputilstestconnection_test" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -316,10 +321,64 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          connection_test
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         connection_test
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raises" class="md-nav__link">
+    Raises
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -356,6 +415,44 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raises" class="md-nav__link">
+    Raises
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -370,9 +467,20 @@
                   
 
 
-  <h1>connection_test</h1>
-
-
+<h1 id="gcputilstestconnection_test">gcputils.test.connection_test</h1>
+<h2 id="overview">Overview</h2>
+<p>The <code>connection_test</code> function tests the connection to Google Cloud Storage using Application Default Credentials. This function checks if the authentication to Google Cloud Storage works by using Application Default Credentials. These credentials are typically set up by running the 'gcloud auth application-default login' command.</p>
+<p>If the connection is successful, it will list the buckets associated with the authenticated project.</p>
+<h2 id="note">Note</h2>
+<p>Before running this function, ensure you have authenticated your application with Google Cloud using 'gcloud auth application-default login' or by setting up the necessary environment variables.</p>
+<h2 id="raises">Raises</h2>
+<ul>
+<li><code>google.auth.exceptions.DefaultCredentialsError</code>: If the function fails to authenticate using Application Default Credentials.</li>
+</ul>
+<h2 id="example">Example</h2>
+<pre><code class="language-python"># Call the connection_test function to test the connection to Google Cloud Storage.
+gcputils.test.connection_test()
+</code></pre>
 
 
 

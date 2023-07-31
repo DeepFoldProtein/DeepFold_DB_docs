@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bigquerymanager-class-documentation" class="md-skip">
+        <a href="#gcputilsbigquerybigquerymanager" class="md-skip">
           Skip to content
         </a>
       
@@ -551,7 +551,7 @@
                   
 
 
-<h1 id="bigquerymanager-class-documentation">BigQueryManager Class Documentation</h1>
+<h1 id="gcputilsbigquerybigquerymanager">gcputils.bigquery.BigQueryManager</h1>
 <h2 id="overview">Overview</h2>
 <p>The <code>BigQueryManager</code> class provides an interface to interact with Google's BigQuery service. It requires the Google Cloud project ID during initialization and accepts a dry_run flag that if set to True, will only estimate the cost of query execution without actually executing them.</p>
 <p>You can use this class to execute SQL queries, write the results to a table in a dataset, extract a table to a Google Cloud Storage bucket, and estimate the cost of running a SQL query.</p>
@@ -561,14 +561,14 @@
 <li><code>dry_run (bool)</code>: If True, only the cost of queries will be estimated without actual execution.</li>
 </ul>
 <h2 id="methods">Methods</h2>
-<h3 id="__init__self-project_id-str-dry_run-bool-false"><code>__init__(self, project_id: str, dry_run: bool = False)</code></h3>
+<h4 id="__init__self-project_id-str-dry_run-bool-false"><code>__init__(self, project_id: str, dry_run: bool = False)</code></h4>
 <p>Initializes a new instance of the BigQueryManager class.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><code>project_id (str)</code>: The Google Cloud project ID.</li>
 <li><code>dry_run (bool, optional)</code>: If True, it only estimates the cost of queries without actually executing them. Defaults to False.</li>
 </ul>
-<h3 id="howmuchself-query-str-job_config-optionalbigqueryqueryjobconfig-none"><code>howmuch(self, query: str, job_config: Optional[bigquery.QueryJobConfig]) -&gt; None</code></h3>
+<h4 id="howmuchself-query-str-job_config-optionalbigqueryqueryjobconfig-none"><code>howmuch(self, query: str, job_config: Optional[bigquery.QueryJobConfig]) -&gt; None</code></h4>
 <p>Estimates the cost and the amount of data that a query will process.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -579,7 +579,7 @@
 <ul>
 <li>None</li>
 </ul>
-<h3 id="execute_queryself-query-str-optionaldataframe"><code>execute_query(self, query: str) -&gt; Optional[DataFrame]</code></h3>
+<h4 id="execute_queryself-query-str-optionaldataframe"><code>execute_query(self, query: str) -&gt; Optional[DataFrame]</code></h4>
 <p>Executes a SQL query and returns the results as a pandas DataFrame.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -589,7 +589,7 @@
 <ul>
 <li><code>Optional[DataFrame]</code>: The result of the query as a pandas DataFrame or None if dry_run is True.</li>
 </ul>
-<h3 id="tobucketself-storage_dir-str-file_name-str-dataset_id-str-table_name-str-compression-bool"><code>tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)</code></h3>
+<h4 id="tobucketself-storage_dir-str-file_name-str-dataset_id-str-table_name-str-compression-bool"><code>tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)</code></h4>
 <p>Extracts a BigQuery table to a Google Cloud Storage bucket.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -603,7 +603,7 @@
 <ul>
 <li>None</li>
 </ul>
-<h3 id="writetableself-query-str-destination_dataset-str-destination_table_name-str"><code>writetable(self, query: str, destination_dataset: str, destination_table_name: str)</code></h3>
+<h4 id="writetableself-query-str-destination_dataset-str-destination_table_name-str"><code>writetable(self, query: str, destination_dataset: str, destination_table_name: str)</code></h4>
 <p>Executes a BigQuery SQL query and writes the results to a destination table in a dataset.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -617,7 +617,7 @@
 </ul>
 <h2 id="example">Example</h2>
 <pre><code class="language-python"># Create a BigQueryManager instance
-manager = BigQueryManager(project_id=&quot;your_project_id&quot;, dry_run=True)
+manager = gcputils.bigquery.BigQueryManager(project_id=&quot;your_project_id&quot;, dry_run=True)
 
 # Use howmuch
 manager.howmuch(query=&quot;your_query&quot;, job_config=bigquery.QueryJobConfig())

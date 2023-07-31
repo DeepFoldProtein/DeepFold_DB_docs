@@ -1,4 +1,4 @@
-# BigQueryManager Class Documentation
+# gcputils.bigquery.BigQueryManager
 
 ## Overview
 
@@ -13,7 +13,7 @@ You can use this class to execute SQL queries, write the results to a table in a
 
 ## Methods
 
-### `__init__(self, project_id: str, dry_run: bool = False)`
+#### `__init__(self, project_id: str, dry_run: bool = False)`
 
 Initializes a new instance of the BigQueryManager class.
 
@@ -22,7 +22,7 @@ Initializes a new instance of the BigQueryManager class.
 - `project_id (str)`: The Google Cloud project ID.
 - `dry_run (bool, optional)`: If True, it only estimates the cost of queries without actually executing them. Defaults to False.
 
-### `howmuch(self, query: str, job_config: Optional[bigquery.QueryJobConfig]) -> None`
+#### `howmuch(self, query: str, job_config: Optional[bigquery.QueryJobConfig]) -> None`
 
 Estimates the cost and the amount of data that a query will process.
 
@@ -35,7 +35,7 @@ Estimates the cost and the amount of data that a query will process.
 
 - None
 
-### `execute_query(self, query: str) -> Optional[DataFrame]`
+#### `execute_query(self, query: str) -> Optional[DataFrame]`
 
 Executes a SQL query and returns the results as a pandas DataFrame.
 
@@ -47,7 +47,7 @@ Executes a SQL query and returns the results as a pandas DataFrame.
 
 - `Optional[DataFrame]`: The result of the query as a pandas DataFrame or None if dry_run is True.
 
-### `tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)`
+#### `tobucket(self, storage_dir: str, file_name: str, dataset_id: str, table_name: str, compression: bool)`
 
 Extracts a BigQuery table to a Google Cloud Storage bucket.
 
@@ -63,7 +63,7 @@ Extracts a BigQuery table to a Google Cloud Storage bucket.
 
 - None
 
-### `writetable(self, query: str, destination_dataset: str, destination_table_name: str)`
+#### `writetable(self, query: str, destination_dataset: str, destination_table_name: str)`
 
 Executes a BigQuery SQL query and writes the results to a destination table in a dataset.
 
@@ -81,7 +81,7 @@ Executes a BigQuery SQL query and writes the results to a destination table in a
 
 ```python
 # Create a BigQueryManager instance
-manager = BigQueryManager(project_id="your_project_id", dry_run=True)
+manager = gcputils.bigquery.BigQueryManager(project_id="your_project_id", dry_run=True)
 
 # Use howmuch
 manager.howmuch(query="your_query", job_config=bigquery.QueryJobConfig())
