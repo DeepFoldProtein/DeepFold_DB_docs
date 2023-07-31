@@ -4,7 +4,7 @@ theme:
 nav:
   - Home: index.md
   - gcputils: 
-    - Subpackages: gcputils/gcputils.md
+    - Submodules: gcputils/gcputils.md
     - test:
       - connection_test: gcputils/test/connection_test.md
     - bigquery:
