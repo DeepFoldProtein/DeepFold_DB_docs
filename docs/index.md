@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Deep Fold DB docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+DeepFold DB main rep [delibae/DeepFold_DB](https://github.com/delibae/DeepFold_DB).
 
-## Commands
+## Libary
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* gcputils: Big Query와 Cloud Storage utils

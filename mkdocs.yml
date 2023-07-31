@@ -1,3 +1,10 @@
-site_name: My Docs
 theme:
   name: material
+site_name: DeepFold_DB_docs
+nav:
+    - Home: index.md
+    - gcputils:
+        - BigQueryManager: gcputils/bigquery/BigQueryManager.md
+        - gsutils: gcputils/gsutils.md
+        - Test:
+            - Connection Test: gcputils/test/connection_test.md

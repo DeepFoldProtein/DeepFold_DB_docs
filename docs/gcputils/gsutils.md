@@ -1,0 +1,4 @@
+- gcputils.bigquery  
+    - [gcputils.bigquery.BigQueryManager](./bigquery/BigQueryManager.md)
+- gcputils.test
+    - [gcputils.test.connection_test](./test/connection_test.md)
