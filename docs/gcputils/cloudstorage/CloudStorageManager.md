@@ -8,7 +8,7 @@ The `CloudStorageManager` class provides an interface to interact with Google Cl
 
 ## Methods
 
-#### `__init__(self, bucket_name: str)`
+#### `__init__`
 
 Initializes a new instance of the `CloudStorageManager` class.
 
@@ -16,7 +16,7 @@ Initializes a new instance of the `CloudStorageManager` class.
 
 - `bucket_name (str)`: The Google Cloud Storage bucket name.
 
-#### `list_blobs(self) -> List[str]`
+#### `list_blobs`
 
 Lists all the blobs in the bucket.
 
@@ -24,7 +24,7 @@ Lists all the blobs in the bucket.
 
 - `List[str]`: A list of blob names in the bucket.
 
-#### `download_blob(self, blob_name: str, destination_dir: str) -> None`
+#### `download_blob`
 
 Downloads a blob from the bucket.
 
