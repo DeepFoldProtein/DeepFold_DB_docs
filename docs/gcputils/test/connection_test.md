@@ -8,7 +8,7 @@ If the connection is successful, it will list the buckets associated with the au
 
 ## Note
 
-Before running this function, ensure you have authenticated your application with Google Cloud using 'gcloud auth application-default login' or by setting up the necessary environment variables.
+Before running this function, ensure you have authenticated your application with Google Cloud using 'gcloud auth application-default login' or by setting up the necessary environment variables. 
 
 ## Raises
 
