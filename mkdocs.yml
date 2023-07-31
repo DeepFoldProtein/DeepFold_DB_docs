@@ -4,7 +4,7 @@ theme:
 nav:
   - Home: index.md
   - gcputils: 
-    - page: gcputils/gcputils.md
+    - Subpackages: gcputils/gcputils.md
     - bigquery:
       - BigQueryManager: gcputils/bigquery/BigQueryManager.md
     - test:
