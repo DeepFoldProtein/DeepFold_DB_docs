@@ -616,28 +616,32 @@
 <li>None</li>
 </ul>
 <h2 id="example">Example</h2>
-<p>```python</p>
-<h1 id="create-a-bigquerymanager-instance">Create a BigQueryManager instance</h1>
-<p>manager = BigQueryManager(project_id="your_project_id", dry_run=True)</p>
-<h1 id="use-howmuch">Use howmuch</h1>
-<p>manager.howmuch(query="your_query", job_config=bigquery.QueryJobConfig())</p>
-<h1 id="use-execute_query">Use execute_query</h1>
-<p>result_df = manager.execute_query(query="your_query")
-print(result_df)</p>
-<h1 id="use-tobucket">Use tobucket</h1>
-<p>manager.tobucket(
-    storage_dir="storage_dir",
-    file_name="file_name",
-    dataset_id="dataset_id",
-    table_name="table_name",
+<pre><code class="language-python"># Create a BigQueryManager instance
+manager = BigQueryManager(project_id=&quot;your_project_id&quot;, dry_run=True)
+
+# Use howmuch
+manager.howmuch(query=&quot;your_query&quot;, job_config=bigquery.QueryJobConfig())
+
+# Use execute_query
+result_df = manager.execute_query(query=&quot;your_query&quot;)
+print(result_df)
+
+# Use tobucket
+manager.tobucket(
+    storage_dir=&quot;storage_dir&quot;,
+    file_name=&quot;file_name&quot;,
+    dataset_id=&quot;dataset_id&quot;,
+    table_name=&quot;table_name&quot;,
     compression=True,
-)</p>
-<h1 id="use-writetable">Use writetable</h1>
-<p>manager.writetable(
-    query="your_query",
-    destination_dataset="destination_dataset",
-    destination_table_name="destination_table_name",
-)</p>
+)
+
+# Use writetable
+manager.writetable(
+    query=&quot;your_query&quot;,
+    destination_dataset=&quot;destination_dataset&quot;,
+    destination_table_name=&quot;destination_table_name&quot;,
+)
+</code></pre>
 
 
 
