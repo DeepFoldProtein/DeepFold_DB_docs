@@ -3,4 +3,4 @@
 - gcputils.bigquery  
     - [gcputils.bigquery.BigQueryManager](./bigquery/BigQueryManager.md)
 - gcputils.cloudstorage
-    - [gcputils.cloudstorage.CloudStorageManager](./cloudstorage/CloudStorageManger.md)
+    - [gcputils.cloudstorage.CloudStorageManager](./cloudstorage/CloudStorageManager.md)
